@@ -3,11 +3,13 @@ cmake_minimum_required(VERSION 3.20)
 set(PROJ_NAME c_graphics_task2)
 set(LIB_NAME edu_sort_and_search)
 
-project(${PROJ_NAME})
+project(${PROJ_NAME} LANGUAGES C)
 
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Build type" FORCE)
 endif()
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
